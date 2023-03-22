@@ -8,28 +8,54 @@ namespace csharp_calcolatrice
 {
     public static class CalcoliHelper
     {
-        //1) somma di due numeri interi
-        public static int Somma(int a, int b)
+        //1) somma di due numeri  
+        public static G Somma<G>(G a, G b)
         {
-            return a + b;
+            dynamic d1 = a;
+            dynamic d2 = b;
+            return d1 + d2;
         }
 
-        //2) somma di due numeri doble
-        public static double Somma(double a, double b)
+        //2) differenza tra due numeri 
+        public static G Differenza<G>(G a, G b)
         {
-            return a + b;
+            dynamic d1 = a;
+            dynamic d2 = b;
+            return d1 - d2;
         }
 
-        //3) differenza tra due numeri interi
-        public static int Differenza(int a, int b)
+        //3) Moltiplicazione tra due numeri
+        public static G Moltiplicazione<G>(G a, G b)
         {
-            return a - b;
+            dynamic d1 = a;
+            dynamic d2 = b;
+            return d1 * d2;
         }
 
-        //4) differenza tra due numeri double
-        public static double Differenza(double a, double b) 
+        //4) valore assoluto 
+        public static G ValoreAssoluto<G>(G a)
         {
-            return a -  b;
+            dynamic d1 = a;
+            return Math.Abs(d1);
+        }
+
+        //5) minimo tra due numeri
+        public static G Minimo<G> (G a, G b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            return Math.Min(d1, d2);
+        }
+
+        //6) massimo tra due numeri
+
+        public static G Massimo<G> (G a, G b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            return Math.Max(d1, d2);
         }
     }
 }
+
+// il 
