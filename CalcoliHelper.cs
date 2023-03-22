@@ -8,54 +8,54 @@ namespace csharp_calcolatrice
 {
     public static class CalcoliHelper
     {
-        //1) somma di due numeri  
-        public static G Somma<G>(G a, G b)
+        public static int Somma(int a, int b)
         {
-            dynamic d1 = a;
-            dynamic d2 = b;
-            return d1 + d2;
+            return a + b;
+        }
+        public static double Somma(double c, double d)
+        {
+            return c + d;
+        }
+        public static int Differenza(int a, int b)
+        {
+            return a - b;
+        }
+        public static double Differenza(double c, double d)
+        {
+            return c - d;
+        }
+        public static int Moltiplicazione(int a, int b)
+        {
+            return a * b;
+        }
+        public static double Moltiplicazione(double c, double d)
+        {
+            return c * d;
+        }
+        public static int ValoreAssoluto(int a)
+        {
+            return Math.Abs(a);
+        }
+        public static double ValoreAssoluto(double c)
+        {
+            return Math.Abs(c);
+        }
+        public static int Minimo(int a, int b)
+        {
+            return Math.Min(a, b);
+        }
+        public static double Minimo(double c, double d)
+        {
+            return Math.Min(c, d);
+        }
+        public static int Massimo(int a, int b)
+        {
+            return Math.Max(a, b);
+        }
+        public static double Massimo(double c, double d)
+        {
+            return Math.Max(c, d);
         }
 
-        //2) differenza tra due numeri 
-        public static G Differenza<G>(G a, G b)
-        {
-            dynamic d1 = a;
-            dynamic d2 = b;
-            return d1 - d2;
-        }
-
-        //3) Moltiplicazione tra due numeri
-        public static G Moltiplicazione<G>(G a, G b)
-        {
-            dynamic d1 = a;
-            dynamic d2 = b;
-            return d1 * d2;
-        }
-
-        //4) valore assoluto 
-        public static G ValoreAssoluto<G>(G a)
-        {
-            dynamic d1 = a;
-            return Math.Abs(d1);
-        }
-
-        //5) minimo tra due numeri
-        public static G Minimo<G> (G a, G b)
-        {
-            dynamic d1 = a;
-            dynamic d2 = b;
-            return Math.Min(d1, d2);
-        }
-
-        //6) massimo tra due numeri
-
-        public static G Massimo<G> (G a, G b)
-        {
-            dynamic d1 = a;
-            dynamic d2 = b;
-            return Math.Max(d1, d2);
-        }
     }
 }
-
-// il 
